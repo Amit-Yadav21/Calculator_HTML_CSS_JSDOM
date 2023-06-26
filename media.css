@@ -10,35 +10,100 @@
 
     .more {
         display: none;
-        /* Hidden by default */
         position: fixed;
-        /* Stay in place */
         z-index: 1;
-        /* Sit on top */
         left: 30.3rem;
         top: 10.9rem;
         width: 310px;
-        /* padding: 10px; */
         background-color: rgb(0, 0, 0);
-        /* Fallback color */
         background-color: rgba(0, 0, 0, 0.4);
-        /* Black w/ opacity */
     }
 }
 
 @media (max-width: 768px) {
     .calculator {
-        height: 73%;
-        width: 310px;
+        height: 100%;
+        width: 100%;
         /* border: 2px solid red; */
     }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 450px) {
     .calculator {
-        height: 50%;
-        width: 70%;
-
+        height: 100%;
+        width: 100%;
+    }
+    .calculator #time{
+        margin-left: 170px;
+    }
+    .calculator #buttons .equlebtn{
+        width: 100%;
+        margin-left: 60px;
+    }
+    #open {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        margin-left:-57px;
+        margin-top: 40px;
+        width: 362px;
+        background-color: rgb(0, 0, 0);
+        background-color: rgba(0, 0, 0, 0.4);
+        height: 28%;
+    }
+}
+@media (max-width: 500px) {
+    .calculator {
+        height: 100%;
+        width: 100%;
+    }
+    .calculator #time{
+        margin-left: 250px;
+    }
+    .calculator #buttons .equlebtn{
+        width: 100%;
+        margin-left: 60px;
+    }
+    #open.more {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        margin-left:-107px;
+        margin-top: 18px;
+        width:400px;
+        background-color: rgb(0, 0, 0);
+        background-color: rgba(0, 0, 0, 0.4);
+        height:33%;
+    }
+    .calculator #buttons .equlebtn{
+        margin-left: 70px;
+    }
+}
+@media (max-width: 550px) {
+    .calculator {
+        height: 100%;
+        width: 100%;
+    }
+    .calculator #time{
+        margin-left: 290px;
+    }
+    .calculator #buttons .equlebtn{
+        width: 100%;
+        margin-left: 70px;
+    }
+    #open.more {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        margin-left:-102px;
+        margin-top: 18px;
+        width:442px;
+        background-color: rgb(0, 0, 0);
+        background-color: rgba(0, 0, 0, 0.4);
+        height:33%;
+    }
+    .calculator #buttons .equlebtn{
+        margin-left: 70px;
     }
 }
 
