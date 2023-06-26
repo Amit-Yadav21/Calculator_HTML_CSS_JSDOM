@@ -37,7 +37,7 @@ buttons.addEventListener("click", (event) => {
             } catch (error) {
                 display.value = "Syntax Error!";
             }
-        } else display.value = "";
+        } else display.value = "First Perform Operation...";
     }
 });
 // ====================================================== End here :- 
@@ -143,7 +143,7 @@ document.addEventListener("keydown", (event) => {
 function KeyboardInput(key) {
     ClickSound();
 
-    const validKeys = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", ".", "+", "-", "*", "/","(",")"];
+    const validKeys = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", ".", "+", "-", "*", "/","(",")","%"];
     if (validKeys.includes(key)) {
         display.value += key;
     } else if (key === "Escape" || key === "Delete") {
@@ -168,7 +168,7 @@ function oparetionKeyboard() {
             display.value = "Syntax Error!";
         }
     } else {
-        display.value = "";
+        display.value = "Frist Perform Operation...";
     }
 }
 // ======================================================== end here :-
