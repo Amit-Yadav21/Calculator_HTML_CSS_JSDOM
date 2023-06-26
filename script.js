@@ -108,12 +108,12 @@ function startTime() {
     var seconds = today.getSeconds();
 
     // time format
-    if (hour <= 12) {
-        hour = hour
-    }
-    else {
-        hour = hour - 12;
-    }
+    // if (hour <= 12) {
+    //     hour = hour
+    // }
+    // else {
+    //     hour = hour - 12;
+    // }
     // add zero if less than 10 
     hour = cancatZero(hour);
     minutes = cancatZero(minutes);
@@ -121,14 +121,17 @@ function startTime() {
 
     // am pm mode
     // var mode = hour < 12 ? "AM" : "PM";
+    var mode = hour >= 12 ? "PM" : "AM";
+    hour = hour % 12;
+    hour = hour ? hour : 12; // If hour is 0, set it to 12
 
-    var mode;
-    if (hour<12) {
-        mode = "AM"
-    }
-    else {
-        mode = "PM"
-    }
+    // var mode;
+    // if (hour<12) {
+    //     mode = "AM"
+    // }
+    // else {
+    //     mode = "PM"
+    // }
 
     document.getElementById("time").innerHTML = hour + ":" + minutes + ":" + seconds + ' ' + mode;
     setTimeout(startTime, 500)
