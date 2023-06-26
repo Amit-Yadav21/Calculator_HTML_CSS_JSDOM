@@ -120,10 +120,10 @@ function startTime() {
     seconds = cancatZero(seconds);
 
     // am pm mode
-    // var mode = hour < 12 ? "AM" : "PM";
-    var mode = hour >= 12 ? "PM" : "AM";
-    hour = hour % 12;
-    hour = hour ? hour : 12; // If hour is 0, set it to 12
+    var mode = hour < 12 ? "AM" : "PM";
+    // var mode = hour >= 12 ? "PM" : "AM";
+    // hour = hour % 12;
+    // hour = hour ? hour : 12; // If hour is 0, set it to 12
 
     // var mode;
     // if (hour<12) {
