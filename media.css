@@ -1,0 +1,210 @@
+@media (max-width: 1000px) {
+    body {
+        background: rgb(2, 0, 36);
+        background-image: url("/image/mathbg1.webp");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        background-size: 100% 100%;
+    }
+
+    .more {
+        display: none;
+        /* Hidden by default */
+        position: fixed;
+        /* Stay in place */
+        z-index: 1;
+        /* Sit on top */
+        left: 30.3rem;
+        top: 10.9rem;
+        width: 310px;
+        /* padding: 10px; */
+        background-color: rgb(0, 0, 0);
+        /* Fallback color */
+        background-color: rgba(0, 0, 0, 0.4);
+        /* Black w/ opacity */
+    }
+}
+
+@media (max-width: 768px) {
+    .calculator {
+        height: 73%;
+        width: 310px;
+        /* border: 2px solid red; */
+    }
+}
+
+@media (max-width: 425px) {
+    .calculator {
+        height: 50%;
+        width: 70%;
+
+    }
+}
+
+/* Media query for mobile screens */
+@media (max-width: 767px) {
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-image: url("./image/mathbg1.webp");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        background-size: 100% 100%;
+    }
+
+    .calculator {
+        width: 50%;
+        height: 80%;
+        padding: 10px;
+        background-color: var(--primary-color);
+        text-align: center;
+        grid-gap: 10px;
+        border-radius: 5px;
+        box-shadow: 2px 3px 4px;
+    }
+    .more {
+        display: none;
+        /* Hidden by default */
+        position: fixed;
+        /* Stay in place */
+        z-index: 1;
+        left: 10rem;
+        width: 320px;
+        background-color: rgb(0, 0, 0);
+        /* Fallback color */
+        background-color: rgba(0, 0, 0, 0.4);
+        /* Black w/ opacity */
+        height: 45%;
+    }
+
+}
+@media (max-width: 625px) {
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-image: url("./image/mathbg1.webp");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        background-size: 100% 100%;
+    }
+
+    .calculator {
+        width: 50%;
+        height: 80%;
+        /* padding: 10px; */
+        background-color: var(--primary-color);
+        text-align: center;
+        grid-gap: 10px;
+        border-radius: 5px;
+        box-shadow: 2px 3px 4px;
+    }
+    .more {
+        display: none;
+        /* Hidden by default */
+        position: fixed;
+        /* Stay in place */
+        z-index: 1;
+        left: 9.8rem;
+        width: 310px;
+        background-color: rgb(0, 0, 0);
+        /* Fallback color */
+        background-color: rgba(0, 0, 0, 0.4);
+        /* Black w/ opacity */
+        height: 45%;
+    }
+
+}
+@media (max-width: 450px){
+    #time{
+        margin-left: 75px;
+    }
+}
+@media (max-width: 450px){
+    #time{
+        margin-left: 90px;
+        width: 50%;
+        font-size: 0.7rem;
+        height: 1.5rem;
+    }
+    h2{
+        font-size: 18px;
+        background-color: white;
+    }
+    #buttons button{
+        font-size: 10px;
+        height: 2.5rem;
+    }
+    .calculator{
+        height: 24rem;
+    }
+    #buttons .equlebtn{
+        margin-top: -50px;
+        margin-left: 40px;
+        height: 2.4rem;
+    }
+    .more {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        margin-top: 23px;
+        left: 6.3rem;
+        width: 200px;
+        background-color: rgb(0, 0, 0);
+        background-color: rgba(0, 0, 0, 0.4);
+        height: 36%;
+    }
+}
+@media (max-width: 350px){
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-image: url("./image/mathbg1.webp");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        background-size: 100% 100%;
+    }
+    h2{
+        font-size: 1rem;
+    }
+    #time{
+        margin-left: 63px;
+        width: 60%;
+        font-size: 0.7rem;
+        height: 1.4rem;
+    }
+    #buttons .equlebtn{
+        margin-top: -50px;
+        margin-left: 35px;
+        height: 2.3rem;
+    }
+    .calculator{
+        height: 23.4rem;
+    } 
+    .more {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        margin-top: 23px;
+        left: 5.5rem;
+        width: 175px;
+        background-color: rgb(0, 0, 0);
+        background-color: rgba(0, 0, 0, 0.4);
+        height: 35%;
+    }
+    #buttons .closebtn{
+        height: 2rem;
+    }
+    .calculator #display{
+        height: 2.3rem;
+    }
+}
