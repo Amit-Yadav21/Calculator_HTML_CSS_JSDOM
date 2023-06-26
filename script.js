@@ -115,16 +115,10 @@ function startTime() {
     //     hour = hour - 12;
     // }
 
-    // -------------------------add zero if less than 10 
-    hour = cancatZero(hour);
-    minutes = cancatZero(minutes);
-    seconds = cancatZero(seconds);
-
     // am pm mode
     // var mode = hour < 12 ? "AM" : "PM";
     var mode = hour >= 11 ? "PM" : "AM";
-    // hour = hour % 12;
-    // hour = hour ? hour : 12; // If hour is 0, set it to 12
+    hour = hour % 12;
 
     // var mode;
     // if (hour<12) {
@@ -134,12 +128,17 @@ function startTime() {
     //     mode = "PM"
     // }
 
+    // -------------------------add zero if less than 10 
+    hour = addZero(hour);
+    minutes = addZero(minutes);
+    seconds = addZero(seconds);
+
     document.getElementById("time").innerHTML = hour + ":" + minutes + ":" + seconds + ' ' + mode;
     setTimeout(startTime, 500)
 }
 // startTime();
 // ..................................... add zero when hour, minutes, second less then 10 
-function cancatZero(value) {
+function addZero(value) {
     if (value < 10) {
         value = '0' + value;
     }
