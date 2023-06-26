@@ -4,7 +4,7 @@ const buttons = document.getElementById("buttons");
 
 buttons.addEventListener("click", (event) => {
     let target = event.target;
-    makeSound();
+    ClickSound();
 
     if (target.innerHTML === "AC") {
         display.value = "";
@@ -42,7 +42,7 @@ buttons.addEventListener("click", (event) => {
 });
 
 // ---------------------------- click sound here 
-function makeSound() {
+function ClickSound() {
     let audio = new Audio("./sound/sound.mp3"); //for sound
     audio.play();
 }
@@ -137,7 +137,7 @@ document.addEventListener("keydown", (event) => {
 
 // Function to handle keyboard input
 function KeyboardInput(key) {
-    makeSound();
+    ClickSound();
 
     const validKeys = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", ".", "+", "-", "*", "/"];
     if (validKeys.includes(key)) {
