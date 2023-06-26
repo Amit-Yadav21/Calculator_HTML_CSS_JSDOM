@@ -43,9 +43,10 @@ h2{
     background-color: white;
 }
 
-#buttons {
+#buttons { 
+    /* show 5 button on screan */
     display: grid;
-    grid-template-columns: repeat(5, 4fr);
+    grid-template-columns: repeat(5, 4fr); 
     grid-gap: 10px;
 }
 button {
@@ -56,6 +57,7 @@ button {
     border: none;
     border-radius: 50%;
     cursor: pointer;
+    box-shadow: 0px 0px 15px;
 }
 
 
@@ -74,6 +76,9 @@ button.operator {
 }
 .equlebtn{
     font-size: 20px;
+}
+.equlebtn:hover{
+    font-size: 30px;
 }
 .power,
 .qube{

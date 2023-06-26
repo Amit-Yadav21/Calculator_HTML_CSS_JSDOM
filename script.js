@@ -107,14 +107,15 @@ function startTime() {
     var minutes = today.getMinutes();
     var seconds = today.getSeconds();
 
-    // time format
+    // time format 24/2 show
     // if (hour <= 12) {
     //     hour = hour
     // }
     // else {
     //     hour = hour - 12;
     // }
-    // add zero if less than 10 
+
+    // -------------------------add zero if less than 10 
     hour = cancatZero(hour);
     minutes = cancatZero(minutes);
     seconds = cancatZero(seconds);
