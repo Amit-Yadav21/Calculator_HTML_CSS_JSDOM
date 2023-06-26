@@ -108,7 +108,7 @@ function startTime() {
     var seconds = today.getSeconds();
 
     // --------------------------------------- am pm mode
-    hour = hour % 12;
+    // hour = hour % 12;
     var mode = hour >= 11 ? "PM" : "AM";
 
     // -------------------------add zero if less than 10 
