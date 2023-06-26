@@ -100,33 +100,16 @@ function fact() {
     display.value = f;
 }
 
-// ---------------------------------------------------set currect time 
+// ===================================================== set currect time 
 function startTime() {
     var today = new Date();
     var hour = today.getHours();
     var minutes = today.getMinutes();
     var seconds = today.getSeconds();
 
-    // time format 24/2 show
-    // if (hour <= 12) {
-    //     hour = hour
-    // }
-    // else {
-    //     hour = hour - 12;
-    // }
-
-    // am pm mode
-    // var mode = hour < 12 ? "AM" : "PM";
-    var mode = hour >= 11 ? "PM" : "AM";
+    // --------------------------------------- am pm mode
     hour = hour % 12;
-
-    // var mode;
-    // if (hour<12) {
-    //     mode = "AM"
-    // }
-    // else {
-    //     mode = "PM"
-    // }
+    var mode = hour >= 11 ? "PM" : "AM";
 
     // -------------------------add zero if less than 10 
     hour = addZero(hour);
@@ -144,7 +127,7 @@ function addZero(value) {
     }
     return value;
 }
-//-------------------------------------------- end setTime here ?
+// ====================================================== end setTime here ?
 
 // ----------------------------------------- using keyboard perform oparetion here 
 // Add event listener for keydown event
