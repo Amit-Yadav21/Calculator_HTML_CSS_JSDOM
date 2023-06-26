@@ -1,11 +1,11 @@
 const display = document.getElementById("display");
-const buttons = document.getElementById("buttons");
+const buttons = document.getElementById("buttons"); 
 
-
+// ================================== here only onclick oparetion perform on browser 
 buttons.addEventListener("click", (event) => {
     let target = event.target;
     ClickSound();
-
+    // -------------
     if (target.innerHTML === "AC") {
         display.value = "";
     }
@@ -40,14 +40,16 @@ buttons.addEventListener("click", (event) => {
         } else display.value = "";
     }
 });
+// ====================================================== End here :- 
 
-// ---------------------------- click sound here 
+// ====================== click sound here 
 function ClickSound() {
     let audio = new Audio("./sound/sound.mp3"); //for sound
     audio.play();
 }
+// ====================================================== End here :-
 
-// .................. power, sqrt, qube, percent, log, pi, sin , cos, tan, asin ,acos, atan
+// ================ power, sqrt, qube, percent, log, pi, sin , cos, tan, asin ,acos, atan
 function pow() {
     display.value = Math.pow(display.value, 2);
 }
@@ -87,8 +89,9 @@ function acos() {
 function atan() {
     display.value = Math.atan(display.value) * (180 / Math.PI);
 }
+// ===================================================== End here :-
 
-// ---------------------- factorials 
+// ================================ factorials operation 
 function fact() {
     var i, num, f;
     f = 1;
@@ -99,8 +102,9 @@ function fact() {
     i = i - 1;
     display.value = f;
 }
+// ========================================================= end here :-
 
-// ===================================================== set currect time 
+// ==================================== set currect time 
 function startTime() {
     var today = new Date();
     var hour = today.getHours();
@@ -127,9 +131,9 @@ function addZero(value) {
     }
     return value;
 }
-// ====================================================== end setTime here ?
+// ================================================= end setTime here :-
 
-// ----------------------------------------- using keyboard perform oparetion here 
+// ======================= using keyboard perform oparetion here 
 // Add event listener for keydown event
 document.addEventListener("keydown", (event) => {
     KeyboardInput(event.key);
@@ -155,6 +159,7 @@ function KeyboardInput(key) {
     }
 
 }
+// ------------------------------------- press Enter button on keyboard get result 
 function oparetionKeyboard() {
     if (display.value.length !== 0) {
         try {
@@ -166,8 +171,9 @@ function oparetionKeyboard() {
         display.value = "";
     }
 }
-// --------------------------------------------------------- end here /
-// ---------------------------------------------------------close more opation after click button  
+// ======================================================== end here :-
+
+// ========== if click and choose in more option , click after close more option  
 document.addEventListener('DOMContentLoaded', function () {
     var buttons = document.getElementsByClassName('close');
     for (var i = 0; i < buttons.length; i++) {
@@ -178,4 +184,4 @@ document.addEventListener('DOMContentLoaded', function () {
 function closeOptions() {
     document.getElementById('open').style.display = 'none';
 }
-// ------------------------------------------------------------ end /
+// ========================================================== end  here :-
