@@ -121,7 +121,7 @@ function startTime() {
 
     // am pm mode
     // var mode = hour < 12 ? "AM" : "PM";
-    var mode = hour >= 12 ? "PM" : "AM";
+    var mode = hour >= 11 ? "PM" : "AM";
     // hour = hour % 12;
     // hour = hour ? hour : 12; // If hour is 0, set it to 12
 
